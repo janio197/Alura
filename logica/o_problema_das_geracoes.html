@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoInicial = 1500;
+    var data = new Date()
+    var ano = data.getFullYear();
+    var idadeMediaCasalTemFilhos = 28;
+    var quantidadeDeGeracoes = Math.round((ano - anoInicial)/idadeMediaCasalTemFilhos);
+
+    mostra (quantidadeDeGeracoes);
+    
+</script>
